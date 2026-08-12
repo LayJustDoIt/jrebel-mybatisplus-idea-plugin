@@ -1,0 +1,36 @@
+<idea-plugin>
+    <id>io.github.layjustdoit.jrebel.mybatisplus</id>
+    <name>MyBatis-Plus Reload</name>
+    <vendor url="https://github.com/LayJustDoIt">LayJustDoIt</vendor>
+
+    <description><![CDATA[
+        <p>JRebel integration for MyBatis-Plus Mapper XML hot reload.</p>
+        <p>This plugin bundles the <code>jrebel-mybatisplus</code> runtime extension and automatically injects it into JRebel via <code>-Drebel.plugins</code>, so MyBatis-Plus Mapper XML changes can be hot-reloaded without restarting the application and without losing MyBatis-Plus injected SQL (e.g. <code>selectPage</code>).</p>
+        <p>No manual VM argument configuration is required — the bundled runtime is discovered and merged with any existing <code>rebel.plugins</code> entries on JRebel Run / JRebel Debug.</p>
+        <p>Validated with:</p>
+        <ul>
+            <li>MyBatis-Plus 3.5.2</li>
+            <li>MyBatis-Plus 3.5.7</li>
+            <li>IntelliJ IDEA 2026.2</li>
+        </ul>
+        <p>Based on the original jrebel-mybatisplus runtime by suchu. MIT License.</p>
+    ]]></description>
+
+    <change-notes><![CDATA[
+        <b>1.0.0</b>
+        <ul>
+            <li>Initial Marketplace release</li>
+            <li>Automatic bundled runtime injection via <code>JavaProgramPatcher</code> (no manual <code>-Drebel.plugins</code>)</li>
+            <li>Existing <code>rebel.plugins</code> entries are preserved and merged (comma-separated)</li>
+            <li>Bundles <code>jrebel-mybatisplus</code> runtime v1.0.8</li>
+            <li>IntelliJ IDEA 2026.2 compatibility</li>
+        </ul>
+    ]]></change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <java.programPatcher implementation="io.github.layjustdoit.jrebel.mybatisplus.JrebelMybatisPlusProgramPatcher"/>
+    </extensions>
+</idea-plugin>

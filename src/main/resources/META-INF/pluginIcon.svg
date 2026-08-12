@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <!-- Database cylinder (simplified) -->
+  <ellipse cx="14" cy="9" rx="9" ry="3.5" fill="none" stroke="#4DB6AC" stroke-width="2"/>
+  <path d="M5 9 L5 22 Q5 25.5 14 25.5 Q23 25.5 23 22 L23 9" fill="none" stroke="#4DB6AC" stroke-width="2"/>
+  <path d="M5 14 Q5 17.5 14 17.5 Q23 17.5 23 14" fill="none" stroke="#4DB6AC" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Letter M inside database -->
+  <path d="M9 22 L9 14 L12 18 L15 14 L15 22" fill="none" stroke="#26A69A" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Reload / refresh circular arrow -->
+  <path d="M28 24 A7 7 0 1 1 28.5 17.5" fill="none" stroke="#FF8A65" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- Arrowhead -->
+  <path d="M25 15 L29 17 L27 21" fill="none" stroke="#FF8A65" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
