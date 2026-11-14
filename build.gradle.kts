@@ -50,9 +50,12 @@ intellijPlatform {
     instrumentCode = false
     pluginVerification {
         ides {
+            // Local IDEA installation (e.g. 2026.3) when provided via gradle.properties
             if (localIdeaPath.isPresent) {
                 local(file(localIdeaPath.get()))
             }
+            // Verify against IDEA 2026.2 Ultimate as well (no local 2026.2 install)
+            create("IU", "262.8665.337")
         }
     }
 }

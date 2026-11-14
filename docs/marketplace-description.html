@@ -1,0 +1,47 @@
+<!--
+  Marketplace Description backup (copy-paste ready).
+  This HTML matches the Description in src/main/resources/META-INF/plugin.xml (v1.0.1).
+  NOTE: If the Marketplace listing is configured to always use the UI-edited
+  description, the ZIP's new bilingual description may NOT override the page.
+  In that case, manually paste this HTML into the Marketplace plugin page.
+-->
+<p>MyBatis-Plus Mapper XML hot reload with JRebel.</p>
+<p>MyBatis-Plus Reload enables Mapper XML hot reload for applications using JRebel and MyBatis-Plus.
+The plugin automatically injects the bundled <code>jrebel-mybatisplus</code> runtime when launching
+applications with JRebel Run or JRebel Debug.</p>
+<h3>Features</h3>
+<ul>
+    <li>Hot reload Mapper XML SQL changes without restarting the JVM.</li>
+    <li>Automatically load the bundled runtime plugin.</li>
+    <li>Preserve existing <code>rebel.plugins</code> entries.</li>
+    <li>Avoid duplicate runtime plugin configuration.</li>
+    <li>Replace older <code>jrebel-mybatisplus</code> runtime entries.</li>
+    <li>Preserve MyBatis-Plus injected SQL statements such as <code>selectPage</code>.</li>
+</ul>
+<h3>Requirements</h3>
+<ul>
+    <li>IntelliJ IDEA 2026.2 or 2026.3</li>
+    <li>JRebel installed and properly configured</li>
+    <li>A compatible MyBatis-Plus project</li>
+</ul>
+<p>After modifying Mapper XML, build or update the resources to trigger hot reload.</p>
+<h3>简体中文</h3>
+<p>MyBatis-Plus Reload 是一款配合 JRebel 使用的 Mapper XML 热加载插件。</p>
+<p>通过 JRebel Run 或 JRebel Debug 启动项目时，插件会自动注入内置的 <code>jrebel-mybatisplus</code> Runtime，无需手工配置 <code>-Drebel.plugins</code>。</p>
+<h3>主要功能</h3>
+<ul>
+    <li>修改 Mapper XML 后无需重启 JVM，即可更新 SQL</li>
+    <li>自动加载内置 Runtime</li>
+    <li>保留已有的 <code>rebel.plugins</code> 配置</li>
+    <li>避免重复加载 Runtime</li>
+    <li>自动替换旧版 <code>jrebel-mybatisplus</code> Runtime</li>
+    <li>保护 MyBatis-Plus 自动注入的 <code>selectPage</code> 等 SQL</li>
+</ul>
+<h3>使用要求</h3>
+<ul>
+    <li>IntelliJ IDEA 2026.2 或 2026.3</li>
+    <li>已安装并正确配置 JRebel</li>
+    <li>使用兼容版本 MyBatis-Plus 的项目</li>
+</ul>
+<p>修改 Mapper XML 后，需要编译或更新资源，才能触发热加载。</p>
+<p>Based on the original jrebel-mybatisplus runtime by suchu / SweetInk. MIT License.</p>
